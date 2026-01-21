@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MagicBank | Educación del Futuro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --azul: #070C2A;
+      --dorado: #D6B15A;
+      --blanco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #050814, #0a0f2a);
+      color: var(--blanco);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero {
+      max-width: 900px;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      width: 220px;
+      margin-bottom: 35px;
+      animation: glow 4s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      0%,100% {
+        filter: drop-shadow(0 0 12px rgba(214,177,90,.4));
+      }
+      50% {
+        filter: drop-shadow(0 0 28px rgba(214,177,90,.9));
+      }
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      .logo { width: 170px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero">
+
+    <!-- LOGO (RUTA CORRECTA PARA GITHUB PAGES) -->
+    <img 
+      src="./assets/img/logos/logo-magicbank.png"
+      alt="MagicBank"
+      class="logo"
+    >
+
+    <h1>MagicBank marca el antes y el después de la educación</h1>
+    <p>Educación adaptativa, tutores inteligentes y conocimiento en evolución constante.</p>
+
+    <footer>
+      MagicBank © Ecosistema educativo guiado por Inteligencia Artificial
+    </footer>
+
+  </div>
+
+</body>
+</html>
